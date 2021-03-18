@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-03-17T16:39:34.277Z",
+        "start_timestamp": "2021-03-18T16:27:59.480Z",
         "line": 4,
         "name": "getting information books",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11579000000,
+              "duration": 12954000000,
               "status": "passed"
             },
             "line": 5,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 1100000000,
+              "duration": 1297000000,
               "status": "passed"
             },
             "line": 6,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 4887000000,
+              "duration": 5751000000,
               "status": "passed"
             },
             "line": 7,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 4769000000,
+              "duration": 5469000000,
               "status": "passed"
             },
             "line": 8,
@@ -67,7 +67,7 @@
           },
           {
             "result": {
-              "duration": 5476000000,
+              "duration": 6228000000,
               "status": "passed"
             },
             "line": 9,
@@ -79,9 +79,8 @@
           },
           {
             "result": {
-              "error_message": "java.lang.NullPointerException\n\tat com.wiki.step_defs.BookDepot_StepDefs.user_should_getting_all_information_about_books_and_cell_on_the_xml_file(BookDepot_StepDefs.java:84)\n\tat ✽.user should getting all information about books and cell on the xml file(file:///Users/abdulazizozden/IdeaProjects/wiki/src/test/resources/feature/bookDepot.feature:10)\n",
-              "duration": 1456000000,
-              "status": "failed"
+              "duration": 14954000000,
+              "status": "passed"
             },
             "line": 10,
             "name": "user should getting all information about books and cell on the xml file",
@@ -106,6 +105,404 @@
     "tags": [
       {
         "name": "@book",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-18T16:27:59.469Z",
+        "line": 5,
+        "name": "Etsy default title verification",
+        "description": "",
+        "id": "etsy-search-feature;etsy-default-title-verification",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11116000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on the Etsy landing page",
+            "match": {
+              "location": "com.wiki.step_defs.EtsyStepDefs.user_is_on_the_etsy_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 208000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should see Etsy title as expected",
+            "match": {
+              "location": "com.wiki.step_defs.EtsyStepDefs.user_should_see_etsy_title_as_expected()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@etsyDavul"
+          },
+          {
+            "name": "@etsy"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-18T16:28:10.846Z",
+        "line": 12,
+        "name": "Etsy search title verification",
+        "description": "",
+        "id": "etsy-search-feature;etsy-search-title-verification",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2769000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is on the Etsy landing page",
+            "match": {
+              "location": "com.wiki.step_defs.EtsyStepDefs.user_is_on_the_etsy_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4411000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user searches for \"davul\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"davul\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.wiki.step_defs.EtsyStepDefs.userSearchesFor(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 35000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user should see \"Davul\" in the Etsy title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Davul\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.wiki.step_defs.EtsyStepDefs.userShouldSeeInTheEtsyTitle(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@etsyDavul"
+          },
+          {
+            "name": "@davul"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-18T16:28:18.072Z",
+        "line": 25,
+        "name": "Etsy search header verification",
+        "description": "",
+        "id": "etsy-search-feature;etsy-search-header-verification;search-product-we-are-going-to-search-in-etsy;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1433000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user is on the Etsy landing page",
+            "match": {
+              "location": "com.wiki.step_defs.EtsyStepDefs.user_is_on_the_etsy_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4042000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user types \"davul\" in the etsy search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"davul\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.wiki.step_defs.EtsyStepDefs.user_types_in_the_etsy_search_box(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 205000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user sees \"Davul\" is in the etsy title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Davul\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.wiki.step_defs.EtsyStepDefs.user_sees_is_in_the_etsy_title(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@etsyDavul"
+          },
+          {
+            "name": "@scenarioOutline"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-18T16:28:23.765Z",
+        "line": 26,
+        "name": "Etsy search header verification",
+        "description": "",
+        "id": "etsy-search-feature;etsy-search-header-verification;search-product-we-are-going-to-search-in-etsy;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2041000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user is on the Etsy landing page",
+            "match": {
+              "location": "com.wiki.step_defs.EtsyStepDefs.user_is_on_the_etsy_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2420000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user types \"zurna\" in the etsy search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"zurna\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.wiki.step_defs.EtsyStepDefs.user_types_in_the_etsy_search_box(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1131000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user sees \"Zurna\" is in the etsy title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zurna\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.wiki.step_defs.EtsyStepDefs.user_sees_is_in_the_etsy_title(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@etsyDavul"
+          },
+          {
+            "name": "@scenarioOutline"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-18T16:28:29.366Z",
+        "line": 27,
+        "name": "Etsy search header verification",
+        "description": "",
+        "id": "etsy-search-feature;etsy-search-header-verification;search-product-we-are-going-to-search-in-etsy;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1707000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user is on the Etsy landing page",
+            "match": {
+              "location": "com.wiki.step_defs.EtsyStepDefs.user_is_on_the_etsy_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3248000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user types \"rose\" in the etsy search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"rose\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.wiki.step_defs.EtsyStepDefs.user_types_in_the_etsy_search_box(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1892000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user sees \"Rose\" is in the etsy title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Rose\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.wiki.step_defs.EtsyStepDefs.user_sees_is_in_the_etsy_title(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@etsyDavul"
+          },
+          {
+            "name": "@scenarioOutline"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-18T16:28:36.221Z",
+        "line": 28,
+        "name": "Etsy search header verification",
+        "description": "",
+        "id": "etsy-search-feature;etsy-search-header-verification;search-product-we-are-going-to-search-in-etsy;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1861000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user is on the Etsy landing page",
+            "match": {
+              "location": "com.wiki.step_defs.EtsyStepDefs.user_is_on_the_etsy_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4057000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user types \"turkish coffee set\" in the etsy search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"turkish coffee set\"",
+                  "offset": 11
+                }
+              ],
+              "location": "com.wiki.step_defs.EtsyStepDefs.user_types_in_the_etsy_search_box(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 315000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user sees \"Turkish coffee set\" is in the etsy title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Turkish coffee set\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.wiki.step_defs.EtsyStepDefs.user_sees_is_in_the_etsy_title(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@etsyDavul"
+          },
+          {
+            "name": "@scenarioOutline"
+          }
+        ]
+      }
+    ],
+    "name": "Etsy search feature",
+    "description": "",
+    "id": "etsy-search-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/etsy.feature",
+    "tags": [
+      {
+        "name": "@etsyDavul",
         "type": "Tag",
         "location": {
           "line": 1,

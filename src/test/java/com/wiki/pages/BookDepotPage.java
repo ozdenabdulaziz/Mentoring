@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import javax.sql.rowset.BaseRowSet;
+import java.util.List;
 
 public class BookDepotPage {
 
@@ -43,8 +44,11 @@ public class BookDepotPage {
     @FindBy(xpath = "(//button[@class='btn btn-default btn-sm pull-right'])[13]")
     public WebElement formatCheckBox;
 
-    @FindBy(xpath = "//image")
-    public WebElement allInformation;
+    @FindBy(xpath = "//div[@class='caption']//h2//a")
+    public List<WebElement> allInformation;
+
+    @FindBy(xpath = "//input[@class='search-bar']")
+    public WebElement searchBox;
 
 
     public void landingPage(){

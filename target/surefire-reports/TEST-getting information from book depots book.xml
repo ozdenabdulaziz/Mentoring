@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Etsy search feature" time="43.15" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="getting information from book depots book" time="46.835" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -64,48 +64,107 @@
     <property name="java.class.version" value="52.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase name="Etsy default title verification" classname="Etsy search feature" time="11.533">
-    <system-out><![CDATA[&amp#27;[32m&amp#27;[1m┌───────────────────────────────────────────────────────────────────────────────────┐&amp#27;[0m
-&amp#27;[32m&amp#27;[1m│&amp#27;[0m Share your Cucumber Report with your team at &amp#27;[36m&amp#27;[1m&amp#27;[4mhttps://reports.cucumber.io&amp#27;[0m          &amp#27;[32m&amp#27;[1m│&amp#27;[0m
-&amp#27;[32m&amp#27;[1m│&amp#27;[0m Activate publishing with one of the following:                                    &amp#27;[32m&amp#27;[1m│&amp#27;[0m
-&amp#27;[32m&amp#27;[1m│&amp#27;[0m                                                                                   &amp#27;[32m&amp#27;[1m│&amp#27;[0m
-&amp#27;[32m&amp#27;[1m│&amp#27;[0m src/test/resources/cucumber.properties:          &amp#27;[36mcucumber.publish.enabled&amp#27;[0m=&amp#27;[36mtrue&amp#27;[0m    &amp#27;[32m&amp#27;[1m│&amp#27;[0m
-&amp#27;[32m&amp#27;[1m│&amp#27;[0m src/test/resources/junit-platform.properties:    &amp#27;[36mcucumber.publish.enabled&amp#27;[0m=&amp#27;[36mtrue&amp#27;[0m    &amp#27;[32m&amp#27;[1m│&amp#27;[0m
-&amp#27;[32m&amp#27;[1m│&amp#27;[0m Environment variable:                            &amp#27;[36mCUCUMBER_PUBLISH_ENABLED&amp#27;[0m=&amp#27;[36mtrue&amp#27;[0m    &amp#27;[32m&amp#27;[1m│&amp#27;[0m
-&amp#27;[32m&amp#27;[1m│&amp#27;[0m JUnit:                                           &amp#27;[36m@CucumberOptions&amp#27;[0m(publish = &amp#27;[36mtrue&amp#27;[0m) &amp#27;[32m&amp#27;[1m│&amp#27;[0m
-&amp#27;[32m&amp#27;[1m│&amp#27;[0m                                                                                   &amp#27;[32m&amp#27;[1m│&amp#27;[0m
-&amp#27;[32m&amp#27;[1m│&amp#27;[0m More information at &amp#27;[36mhttps://reports.cucumber.io/docs/cucumber-jvm&amp#27;[0m                 &amp#27;[32m&amp#27;[1m│&amp#27;[0m
-&amp#27;[32m&amp#27;[1m│&amp#27;[0m                                                                                   &amp#27;[32m&amp#27;[1m│&amp#27;[0m
-&amp#27;[32m&amp#27;[1m│&amp#27;[0m Disable this message with one of the following:                                   &amp#27;[32m&amp#27;[1m│&amp#27;[0m
-&amp#27;[32m&amp#27;[1m│&amp#27;[0m                                                                                   &amp#27;[32m&amp#27;[1m│&amp#27;[0m
-&amp#27;[32m&amp#27;[1m│&amp#27;[0m src/test/resources/cucumber.properties:          &amp#27;[36mcucumber.publish.quiet&amp#27;[0m=&amp#27;[36mtrue&amp#27;[0m      &amp#27;[32m&amp#27;[1m│&amp#27;[0m
-&amp#27;[32m&amp#27;[1m│&amp#27;[0m src/test/resources/junit-platform.properties:    &amp#27;[36mcucumber.publish.quiet&amp#27;[0m=&amp#27;[36mtrue&amp#27;[0m      &amp#27;[32m&amp#27;[1m│&amp#27;[0m
-&amp#27;[32m&amp#27;[1m└───────────────────────────────────────────────────────────────────────────────────┘&amp#27;[0m
-
+  <testcase name="getting information books" classname="getting information from book depots book" time="46.835">
+    <system-out><![CDATA[My Little Pony: Fluttershy's Bunny Haven (Passport to Reading Level 2)
+God Will Use This for Good: Surviving the Mess of Lfe
+Jesus Always: Embracing Joy in His Presence
+Jesus Calling: Enjoying Peace in His Presence
+The Berenstain Bears Go Christmas Caroling (Berenstain Bears/Living Lights: A Faith Story)
+Brave Love: Making Space for You to Be You
+Channing o'Banning and the Turquoise Trail
+Cross My Heart (A Legacy of Faith Novel)
+God's Words of Life for Mothers
+The Grumble-Free Year: Twelve Months, Eleven Family Members, and One Impossible Goal
+Hands Free Life: Nine Habits for Overcoming Distraction, Living Better, and Loving More
+Healing Into Life and Death
+The Innocents
+Inspiring Words: 30 Verses from the Bible You Can Color
+Introverted Mom: Your Guide to More Calm, Less Guilt, and Quiet Joy
+It's Not What You Think: Why Christianity Is About So Much More Than Going to Heaven When You Die
+The Lies We Believe: Renew Your Mind and Transform Your Life
+Love Bears All Things (An Amish Secrets Novel)
+A Love Made New (Amish of Birch Creek, Bk. 3)
+Mary (Get to Know)
+The Mindful Guide to Conflict Resolution
+Mountains of Grace (Amish of Big Sky Country)
+My Story - Joseph
+Natural Killer: A Memoir
+The New Girl
+The New York Trilogy: City of Glass/Ghosts/The Locked Room
+Oh She Glows Every Day: Quick and Simply Satisfying Plant-Based Recipes
+Perfectly Unique: Praising God from Head to Foot
+The Plans I Have For You Journal
+The Rosie Effect
+Same Kind of Different As Me
+Summer by the Tides
+Sweet Olive (Trumpet and Vine Novel)
+Thanksgiving Blessings (Berenstain Bears, Living Lights)
+Through My Father's Eyes
+The Ultimate Cooking for One Cookbook: 175 Super Easy Recipes Made Just for You
+Vegan Basics: Your Guide to the Essentials of a Plant-Based Diet - and How It Can Work for You!
+What's Next? The Journey to Know God, Find Freedom, Discover Purpose, and Make a Difference
+Wonders of Creation Coloring Book: Illustrations to Color and Inspire
+101 DIY Baby Food Pouches
+175 Best Air Fryer Recipes
+50 Yale Admission Success Stories
+Advent Conspiracy: Making Christmas Meaningful (Again)
+After Me Comes the Flood
+The Art of Racing in the Rain
+At His Mercy
+Attack on Pearl Harbor (Soldier Dogs, Bk. 2)
+The Autobiography of Martin Luther King, Jr.
+The Awakening of Sunshine Girl (The Haunting of Sunshine Girl Series, Bk. 2)
+Be More Pirate: Or How to Take on the World and Win
+Be the Change: The Future is in Your Hands
+Because It Is My Blood (Birthright, Bk. 2)
+Beer (Eyewitness Companion Guides)
+Betsy And Tacy Go Over The Big Hill (Betsy-Tacy, Bk. 3)
+The Biggest Loser Cookbook: More Than 125 Healthy, Delicious Recipes Adapted from NBC's Hit Show
+Birmingham Friends (Birmingham Series, Bk. 2)
+Bloody London: 20 Walks in London, Tracing its Gruesome and Horrific History
+The Border
+Buttercream Basics: Learn the Art of Buttercream Decorating
+Calm Meditation Made Simple
+Calm: The Magic of Sleep
+Can't Make This Stuff Up! Finding the Upside to Life's Downs
+Captain Paul Watson: Interview with a Pirate
+The Cassandra
+Celebrate Today: 365 Ways to Make Every Day a Holiday
+Challenging Picture Puzzles: Over 75 Timed Puzzles to Test Your Skills
+Champions of Women's Soccer
+A Charlie Brown Valentine (Peanuts)
+Co-creating Brands: Brand Management from a Co-Creative Perspective
+Coding with Anna and Elsa: A Frozen Guide to Blockly (Disney Frozen - Disney Learning)
+Cole and Sav: Our Surprising Love Story
+Collusion (Mayberry and Garrett, Bk. 1)
+Confessions of a Wannabe Cheerleader (Bk. 1)
+The Confusion of Karen Carpenter
+Creative Folk Art and Beyond: Inspiring Tips, Projects, and Ideas for Creating Cheerful Folk Art Inspired by the Scandinavian Concept of Hygge
+Cuba (National Geographic Traveler, 4th Edition)
+Daniel Plays in the Snow (Daniel Tiger's Neighborhood)
+Deadly Animals (Wild Nature)
+Dear Luke, We Need to Talk, Darth - And Other Pop Culture Correspondences
+Disruptive Compassion: Becoming the Revolutionary You Were Born to Be
+Divine Direction: 7 Decisions That Will Change Your Life
+Drinking in America: Our Secret History
+ECOrenaissance: A Lifestyle Guide for Cocreating a Stylish, Sexy, and Sustainable World
+Eat More Dessert
+Effortless Entertaining Cookbook: 80 Recipes That Will Impress Your Guests Without Stress
+Emeril's Cooking with Power
+The Enchanted Hour: The Miraculous Power of Reading Aloud in the Age of Distraction
+Epic Air Fryer Cookbook
+Everything in Its Path
+Eyes On the Prize (The Fix-It Friends, Bk. 5)
+False Bingo
+Firebrand (Green Rider, Bk. 6)
+The First Mistake
+Food Cures: Tasty Remedies to Treat Common Conditions
+Framed! (Bk. 1)
+Frankenstein: A Monstrous Parody
 ]]></system-out>
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-ChromeDriver was started successfully.
-Mar 18, 2021 12:28:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+    <system-err><![CDATA[ChromeDriver was started successfully.
+Mar 18, 2021 12:28:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
-  </testcase>
-  <testcase name="Etsy search title verification" classname="Etsy search feature" time="7.227"/>
-  <testcase name="Etsy search header verification #1" classname="Etsy search feature" time="5.693">
-    <system-out><![CDATA[Davul | Etsy CA
-]]></system-out>
-  </testcase>
-  <testcase name="Etsy search header verification #2" classname="Etsy search feature" time="5.602">
-    <system-out><![CDATA[Zurna | Etsy CA
-]]></system-out>
-  </testcase>
-  <testcase name="Etsy search header verification #3" classname="Etsy search feature" time="6.858">
-    <system-out><![CDATA[Rose | Etsy CA
-]]></system-out>
-  </testcase>
-  <testcase name="Etsy search header verification #4" classname="Etsy search feature" time="6.237">
-    <system-out><![CDATA[Turkish coffee set | Etsy CA
-]]></system-out>
   </testcase>
 </testsuite>

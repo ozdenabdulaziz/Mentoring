@@ -14,13 +14,6 @@ Feature: Etsy search feature
     When user searches for "davul"
     Then user should see "Davul" in the Etsy title
 
-  @excel
-  Scenario: User should list will be listed in excel file
-    Given user is on the Etsy landing page
-    When user searches for "davul"
-    When user should see "Davul" in the Etsy title
-    Then user should listed all davul option in excel file
-
   @scenarioOutline
   Scenario Outline: Etsy search header verification
     Given user is on the Etsy landing page

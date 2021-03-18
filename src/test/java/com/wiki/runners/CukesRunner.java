@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/feature",                   // I created feature path way from feature file
         glue = "com/wiki/step_defs",                   // I created glue path way from stepDefinitions
         dryRun = false,
-        tags = "@book"
+        tags = ""
 )
 
 public class CukesRunner {

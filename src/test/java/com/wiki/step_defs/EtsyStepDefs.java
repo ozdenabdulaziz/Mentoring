@@ -1,17 +1,21 @@
 package com.wiki.step_defs;
 
 import com.wiki.pages.EtsySearchPage;
+import com.wiki.utilities.BrowserUtils;
 import com.wiki.utilities.ConfigurationReader;
 import com.wiki.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -25,10 +29,10 @@ public class EtsyStepDefs {
 
     EtsySearchPage etsySearchPage = new EtsySearchPage();
 
-    XSSFWorkbook workbook;
-    XSSFSheet sheet;
-    XSSFRow row;
-    XSSFCell cell;
+    XSSFWorkbook workbook1;
+    XSSFSheet sheet1;
+//    XSSFRow row;
+//    XSSFCell cell;
 
 
     @Given("user is on the Etsy landing page")
@@ -59,38 +63,21 @@ public class EtsyStepDefs {
         String expected = arg0 + " | Etsy CA";
 
         Assert.assertEquals(actual, expected);
-
     }
 
 
-    @Then("user should listed all davul option in excel file")
-    public void user_should_listed_all_davul_option_in_excel_file() throws IOException {   // I added IOException here for the accept al abject methods
-
-        System.out.println(etsySearchPage.list.getSize());
-
-        String path = "EtsyDavulSheet.xlsx";
-        FileInputStream fileInputStream = new FileInputStream(path);
-        workbook = new XSSFWorkbook(fileInputStream);
-        sheet = workbook.getSheet("Sheet1");                                        //  Sheet1 is come from excel file
-
-        for (int rowNum = 0; rowNum <= sheet.getLastRowNum(); rowNum++) {
-            row = sheet.getRow(rowNum);
-            if (row.getCell(0) == null) {
-                row.createCell(0);
-            }
-
-            row.getCell(1).setCellValue(etsySearchPage.list.getText());
-
-        }
-
-        DateTimeFormatter DTF = DateTimeFormatter.ofPattern("yy:MM:dd:hh:mm:ss a");
-        sheet.getRow(1).getCell(1).setCellValue(LocalDateTime.now().format(DTF));
-        FileOutputStream fileOutputStream=new FileOutputStream(path);
-        workbook.write(fileOutputStream);
-        fileInputStream.close();
-        fileOutputStream.close();
-        workbook.close();
-
-
+    @When("user types {string} in the etsy search box")
+    public void user_types_in_the_etsy_search_box(String string) {
+        etsySearchPage.searchBox.sendKeys(string + Keys.ENTER);
     }
+
+
+    @Then("user sees {string} is in the etsy title")
+    public void user_sees_is_in_the_etsy_title(String string) {
+        System.out.println(Driver.getDriver().getTitle());
+        String actualTitle = Driver.getDriver().getTitle();
+        String expected = string + " | Etsy CA";
+    }
+
+
 }
