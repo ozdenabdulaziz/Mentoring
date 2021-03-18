@@ -1,7 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Etsy search feature
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 22.571 s <<< FAILURE! - in Etsy search feature
-Etsy search feature.User should list will be listed in excel file  Time elapsed: 6.02 s  <<< ERROR!
-org.apache.poi.EmptyFileException: The supplied file was empty (zero bytes long)
-
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 43.15 s - in Etsy search feature

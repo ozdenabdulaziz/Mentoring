@@ -2,13 +2,18 @@ package com.wiki.step_defs;
 
 import com.wiki.pages.BookDepotPage;
 import com.wiki.utilities.BrowserUtils;
+import com.wiki.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.junit.Assert;
+import org.openqa.selenium.WebElement;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -23,8 +28,8 @@ public class BookDepot_StepDefs extends BookDepotPage {
 
     XSSFWorkbook workbook;
     XSSFSheet sheet;
-    XSSFRow row;
-    XSSFCell cell;
+//    XSSFRow row;
+//    XSSFCell cell;
 
 
     @Given("user should go to book depot landing page")
@@ -71,6 +76,47 @@ public class BookDepot_StepDefs extends BookDepotPage {
         workbook = new XSSFWorkbook(fileInputStream);
         sheet = workbook.getSheet("Sheet1");
 
+
+        for (int i = 0; i < allInformation.size(); i++) {
+            String element = allInformation.get(i).getText();
+            Row row = sheet.createRow(i + 1);
+            Cell cell = row.createCell(1);
+            cell.setCellValue(element);
+
+
+        }
+        for (WebElement webElement : allInformation) {
+            System.out.println(webElement.getText());
+        }
+
+        // DateTimeFormatter DTF = DateTimeFormatter.ofPattern("yy:MM:dd:hh:mm:ss a");
+        // sheet.getRow(1).getCell(1).setCellValue(LocalDate.now().format(DTF));
+        FileOutputStream fileOutputStream = new FileOutputStream(path);
+        workbook.write(fileOutputStream);
+        fileInputStream.close();
+        fileOutputStream.close();
+        workbook.close();
+
+
+        BrowserUtils.sleep(3);
+        Driver.closeDriver();
+    }
+
+
+}
+//System.out.println(Driver.getDriver().getTitle());
+//        String actualTitle = Driver.getDriver().getTitle();
+//        String expected = string + " | Etsy CA";
+
+/*
+ @Then("user should getting all information about books and cell on the xml file")
+    public void user_should_getting_all_information_about_books_and_cell_on_the_xml_file() throws IOException {
+
+        String path = "BookDepotSheet.xlsx";
+        FileInputStream fileInputStream = new FileInputStream(path);
+        workbook = new XSSFWorkbook(fileInputStream);
+        sheet = workbook.getSheet("Sheet1");
+
         for (int rowNum = 1; rowNum <= sheet.getLastRowNum(); rowNum++) {
             row = sheet.getRow(1);
             if (row.getCell(1) == null) {
@@ -81,7 +127,7 @@ public class BookDepot_StepDefs extends BookDepotPage {
         }
 
         DateTimeFormatter DTF = DateTimeFormatter.ofPattern("yy:MM:dd:hh:mm:ss a");
-        sheet.getRow(2).getCell(2).setCellValue(LocalDate.now().format(DTF));
+        sheet.getRow(1).getCell(1).setCellValue(LocalDate.now().format(DTF));
         FileOutputStream fileOutputStream = new FileOutputStream(path);
         workbook.write(fileOutputStream);
         fileInputStream.close();
@@ -93,4 +139,4 @@ public class BookDepot_StepDefs extends BookDepotPage {
 
 
     }
-}
+ */
